@@ -1,10 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const WelcomeSection = ({ onStart, hasStarted }) => {
   return (
     <div className="relative w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-pink-50 via-blush-100 to-pink-100 overflow-hidden">
-
       {/* Animated glowing orbs background for a magical feel */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -12,7 +11,7 @@ const WelcomeSection = ({ onStart, hasStarted }) => {
             scale: [1, 1.2, 1],
             opacity: [0.4, 0.6, 0.4],
             x: [0, 50, 0],
-            y: [0, -30, 0]
+            y: [0, -30, 0],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-[10%] left-[10%] w-72 h-72 md:w-96 md:h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50"
@@ -22,9 +21,14 @@ const WelcomeSection = ({ onStart, hasStarted }) => {
             scale: [1, 1.3, 1],
             opacity: [0.3, 0.5, 0.3],
             x: [0, -60, 0],
-            y: [0, 60, 0]
+            y: [0, 60, 0],
           }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1,
+          }}
           className="absolute bottom-[10%] right-[10%] w-80 h-80 md:w-[30rem] md:h-[30rem] bg-blush-300 rounded-full mix-blend-multiply filter blur-3xl opacity-40"
         />
       </div>
@@ -45,7 +49,7 @@ const WelcomeSection = ({ onStart, hasStarted }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          HEY SATHI
+          HEY TMP
         </motion.h1>
 
         {/* Elegant Animated Divider */}
@@ -85,7 +89,11 @@ const WelcomeSection = ({ onStart, hasStarted }) => {
               <motion.div
                 className="absolute inset-0 rounded-full bg-white"
                 animate={{ opacity: [0, 0.2, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
             </motion.button>
           </motion.div>
