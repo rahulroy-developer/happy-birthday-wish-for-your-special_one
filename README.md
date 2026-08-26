@@ -28,7 +28,7 @@ The application looks for specific filenames, so make sure your images match the
 
 - **`pic1.jpeg`** to **`pic6.jpeg`**: These are used in the "Your Beautiful Memories" 3D Coverflow Gallery. You can replace them with your own 6 favorite memory pictures. Portrait orientation (e.g. 400x600) works best.
 - **`Birthdaypic.jpeg`**: This is the main background image used in the birthday section. Portrait orientation works best here as well.
-- **`video1.mp4`**: Replace this dummy video with your own favorite memory video.
+- **`video1.mp4`**: Replace this dummy video with your own favorite memory video (If have any).
 - **`hero.png`**: (If used in your hero section) Replace this with your preferred hero/landing graphic.
 
 **Important Notes:**
